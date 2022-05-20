@@ -25,7 +25,7 @@ def everything_exists():
 
 if not everything_exists():
     json_config = requests.get(
-        "https://raw.githubusercontent.com/StarNumber12046/WallSplash/main/config.standard.json"
+        "https://raw.githubusercontent.com/XPower7125/WallSplash/main/config.standard.json"
     )
     f = open("config.json", "wb")
     f.write(json_config.content)
@@ -36,19 +36,19 @@ if not everything_exists():
     except:
         pass
     grinning = requests.get(
-        "https://github.com/StarNumber12046/WallSplash/blob/main/icons/grinning.ico?raw=true"
+        "https://github.com/XPower7125\1/WallSplash/blob/main/icons/grinning.ico?raw=true"
     )
     f = open("icons/grinning.ico", "wb")
     f.write(grinning.content)
     f.close()
     growing = requests.get(
-        "https://github.com/StarNumber12046/WallSplash/blob/main/icons/growing.ico?raw=true"
+        "https://github.com/XPower7125/WallSplash/blob/main/icons/growing.ico?raw=true"
     )
     f = open("icons/growing.ico", "wb")
     f.write(grinning.content)
     f.close()
     exit(
-        "Insert your API key from Unsplash in the config.json and restart the program!"
+        "Insert your API key from Unsplash in the config.json file and restart the program"
     )
 
 
@@ -67,7 +67,7 @@ try:
 except:
     notifications.show_toast(
         "Error!",
-        "The API key is not valid",
+        "The API key is invalid",
         icon_path="icons/growing.ico",
         duration=5,
         threaded=True,
